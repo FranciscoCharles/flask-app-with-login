@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% from "macros.html" import show_menu with context%}
+{% block head %}
+    <link rel="stylesheet" href='static/css/form.css'>
+{% endblock %}
+{% block navbar %}
+    {{show_menu('login')}}
+{% endblock %}
+{% block content %}
+    <div class="form-login">
+        <form action="" method="post">
+            <fieldset>
+                <div class="form-input">
+                    <label for="">Email</label>
+                    <input required="required" type="email" name="email" placeholder="Insira um email">
+                </div>
+                <div class="form-input">
+                    <label for="">Senha</label>
+                    <input required="required" type="password" name="password" placeholder="********">
+                </div>
+                <input id="submit-button" type="submit" value="Logar">
+            </fieldset>
+        </form>
+    </div>
+    {% include 'modal-error.html'%}
+{% endblock %}

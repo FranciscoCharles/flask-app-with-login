@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% from "macros.html" import show_menu with context%}
+{% block navbar %}
+    {{show_menu('home')}}
+{% endblock %}
+{% block content %}
+<div>
+    {% if current_user.is_authenticated %}
+        <h1>Seja bem vindo(a), {{ current_user.name }}</h1>
+        <p>Você esta logado(a).</p>
+    {% else %}
+        <h1>Olá, Visitante</h1>
+        <p>Sorry, você não esta logado(a).</p>
+    {% endif %}
+</div>
+{% endblock %}

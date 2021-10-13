@@ -1,0 +1,28 @@
+@media screen and (min-width:141px) {
+    html{
+        font-size: 16px;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width:141px) {
+    html{
+        font-size: 10px;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width:60px) {
+    html{
+        font-size: 7px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:141px) {
+    .navigation{
+        padding-right: 0;
+    }
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

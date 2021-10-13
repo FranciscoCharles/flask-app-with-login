@@ -1,0 +1,12 @@
+.footer{
+    clear: both;
+    position: relative;
+    background-color: var(--global_color_background);
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+.footer-text{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(255,255,255,7);
+}

@@ -1,0 +1,11 @@
+{% if errors %}
+    <div class="error-container">
+        <span class="error-header"><b class="error-close">X</b></span>
+        <div class="error-message">
+                <span>{{errors}}</span>
+            </div>
+    </div>
+    {% block scripts %}
+        <script type="text/javascript" src="static/js/modal-error.js"></script>
+    {% endblock %}
+{% endif %}

@@ -1,0 +1,22 @@
+{# myapp/templates/macros.html #}
+
+{% macro show_menu(page_name) %}
+<div class="navigation">
+    <nav class="menu">
+        {% if page_name == 'home' %}
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('main.logout') }}">Logout</a>
+            {% else %}
+            <a href="{{url_for('main.login')}}"> Login </a>
+            <a href="{{url_for('main.register')}}"> Regista-se </a>
+            {% endif %}
+        {% elif page_name == 'login' %}
+            <a href="{{url_for('main.home')}}"> Home </a>
+            <a href="{{url_for('main.register')}}"> Regista-se </a>
+        {% else %}
+            <a href="{{url_for('main.home')}}"> Home </a>
+            <a href="{{url_for('main.login')}}"> Login </a>
+        {% endif %}
+    </nav>
+</div>
+{% endmacro %}

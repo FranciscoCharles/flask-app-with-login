@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --global_color_background: rgb(54, 54, 54);
+}
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    min-height: 5rem;
+    width: 100vw;
+    font-size: 62.5%;
+    background-color: rgba(220,220,220, .8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

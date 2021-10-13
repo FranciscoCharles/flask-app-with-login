@@ -1,0 +1,22 @@
+.navigation{
+    position: relative;
+    height: 3rem;
+    margin-bottom: -3rem;
+    width: 100vw;
+    background-color: var(--global_color_background);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2rem;
+}
+.menu{
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgba(255,255,255,7);
+}

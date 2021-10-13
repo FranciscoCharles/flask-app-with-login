@@ -1,0 +1,71 @@
+form fieldset{
+    height: 14rem;
+    width: min(12rem, 40vw);
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow:  0.5rem 0.5rem 0.5rem 0.5rem rgba(92,92,92,.5);
+}
+.form-login form fieldset{
+    height: 10rem;
+}
+.form-input label, input{
+    font-size: 1.2rem;
+}
+.form-input input{
+    width: min(12rem, 50vw);
+}
+.form-input label{
+    font-size: 1.2rem;
+}
+#submit-button{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    width: min(7rem, 30vw);
+}
+.error-container, .error-header, .error-message{
+    width: min(80vw, 30rem);
+}
+.error-container{
+    margin-top: 2rem;
+    box-shadow:  5px 5px 5px 5px rgba(92,92,92,.5);
+    border-radius: 1rem;
+}
+.error-header{
+    height: 2rem;
+    background-color: var(--global_color_background);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1rem;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.error-message{
+    text-align: center;
+    font-size: 1.6rem;
+    max-width: 40ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1rem;
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.error-close{
+    text-align: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
