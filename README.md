@@ -4,7 +4,7 @@
 </p>
 <p align="justify">
 
-Este projeto basico é o resultado do estudos de algumas funcionalidades do micro framework **Flask** do **Pygame**. O principal objetivo foi entender alguns conceitos utilizados além de conhecer como um projeto flask deve ser organizado, puxando a questão de organização e arquitetura.
+Este projeto basico é o resultado do estudos de algumas funcionalidades do micro framework **Flask** do **Python**. O principal objetivo foi entender alguns conceitos utilizados além de conhecer como um projeto flask deve ser organizado, puxando a questão de organização e arquitetura.
 
 </p>
 
