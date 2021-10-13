@@ -12,14 +12,14 @@ Este projeto basico é o resultado do estudos de algumas funcionalidades do micr
     <img src="./app_with_login/static/asserts/screen_1.png">
     <br>
     <h6>
-        Figure 2 - tela quando logado e telas com alguns erros.
+        Figure 1 - principais telas.
     </h6>
 </div>
 <div align="center">
     <img src="./app_with_login/static/asserts/screen_2.png">
     <br>
     <h6>
-        Figure 1 - principais telas.
+        Figure 2 - tela quando logado e telas com alguns erros.
     </h6>
 </div>
 
