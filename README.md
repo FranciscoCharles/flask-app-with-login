@@ -71,9 +71,6 @@ Tambem está disponivel um comando para deletar as tabelas, use o seguinte coman
 
 Para mais informações sobre a licença deste projeto, leia o arquivo <a href="./LICENSE" title="go to license file">LICENSE</a>.
 
-# **<a name=leitura_adicional>📚 Leitura adicional 🔎</a>**  <h6>[voltar ao indice](#index)</h6>
-Para entender melhor o jogo, você pode acessar:
-+ [Wikipedia](https://en.wikipedia.org/wiki/Tetris)
 ---
 <p align="center">
     Copyright © 2021 <b>FranciscoCharles</b>
