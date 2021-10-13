@@ -30,7 +30,7 @@ def populate_db():
     """Populate database"""
     data = [
         User(name="joel", email="joel@example.com", password="123"),
-        User(name="eli", email="eli@example.com", password="123"),
+        User(name="ellie", email="ellie@example.com", password="123"),
     ]
     db.session.bulk_save_objects(data)
     db.session.commit()

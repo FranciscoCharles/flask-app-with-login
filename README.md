@@ -44,7 +44,7 @@ Este projeto basico é o resultado do estudos de algumas funcionalidades do micr
  ```bash
  flask populate-db
  ```
- Após esse comando estará disponivel dois usarios com emails sendo `joel@example.com` e `eli@example.com`, ambos usam a senha `123`.
+ Após esse comando estará disponivel dois usarios com emails sendo `joel@example.com` e `ellie@example.com`, ambos usam a senha `123`.
 
 Tambem está disponivel um comando para deletar as tabelas, use o seguinte comando para esse proposito:
 ```bash
