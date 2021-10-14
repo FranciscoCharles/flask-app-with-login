@@ -58,11 +58,11 @@ Tambem está disponivel um comando para deletar as tabelas, use o seguinte coman
 
 # **<a name=dependencies>Dependências</a>**  <h6>[voltar ao indice](#index)</h6>
 
-- [**Flask**](https://pypi.org/project/pygame/) **>= 2.0.2**
-- [**Flask-login**](https://pypi.org/project/pygame/) **>= 0.5.0**
-- [**Flask-SQLAlchemy**](https://pypi.org/project/pygame/) **>= 2.5.1**
-- [**Dynaconf**](https://pypi.org/project/pygame/) **>=3.1.7**
-- [**Toml**](https://pypi.org/project/pygame/) **>=0.10.2**
+- [**Flask**](https://pypi.org/project/Flask/) **>= 2.0.2**
+- [**Flask-login**](https://pypi.org/project/Flask-Login/) **>= 0.5.0**
+- [**Flask-SQLAlchemy**](https://pypi.org/project/Flask-SQLAlchemy/) **>= 2.5.1**
+- [**Dynaconf**](https://pypi.org/project/dynaconf/) **>=3.1.7**
+- [**Toml**](https://pypi.org/project/toml/) **>=0.10.2**
 
 # **<a name=version>Versão</a>**  <h6>[voltar ao indice](#index)</h6>
 - versão atual do projeto: 0.1.1.
