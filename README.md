@@ -31,7 +31,11 @@ Este projeto basico é o resultado do estudos de algumas funcionalidades do micr
 
 # **<a name=run> ⚙️ Como executar? 🧠💭</a>** <h6>[voltar ao indice](#index)</h6>
 
- Faça o download do projeto, entre na pasta `src` e instale as dependências. renomeie o arquivo `example-settings.toml` para `settings.toml` e faça as devidas configurações.
+ Faça o download do projeto, entre na pasta `src` e instale as dependências com o seguinte comando:
+ ```bash
+pip install -r requirements.txt
+```
+ renomeie o arquivo `example-settings.toml` para `settings.toml` e faça as devidas configurações.
  
  Além disso atente-se que nesse arquivo de configuração deve-se preencher os atributos **DB_CONNECTOR**, **DB_USER**, **DB_PASSWORD**,**DB_URL**,**DB_NAME**, todos serão utilizados para construir um URL de acesso  no seguinte formato 
  `{DB_CONNECTOR}://{DB_USER}:{DB_PASSWORD}@{DB_URL}/{DB_NAME}`, se desejar é possivel alterar o código para se adequar ao seu banco desejado.
