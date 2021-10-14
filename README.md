@@ -1,5 +1,5 @@
 <p align="center">
-  <h1>Flask App With Login</h1>
+  <h1>🛠️🧪 <b>Flask App With Login</b> 🛠️🧪</h1>
   <h6>by <i>FranciscoCharles</i></h6>
 </p>
 <p align="justify">
@@ -33,13 +33,15 @@ Este projeto basico é o resultado do estudos de algumas funcionalidades do micr
 
  Faça o download do projeto, entre na pasta `src` e instale as dependências. renomeie o arquivo `example-settings.toml` para `settings.toml` e faça as devidas configurações.
  
- Alem disso atente-se que nesse arquivo de configuração deve-se preencher os atributos **DB_CONNECTOR**, **DB_USER**, **DB_PASSWORD**,**DB_URL**,**DB_NAME**, todos serão utilizados para construir um URL de acesso  no seguinte formato 
+ Além disso atente-se que nesse arquivo de configuração deve-se preencher os atributos **DB_CONNECTOR**, **DB_USER**, **DB_PASSWORD**,**DB_URL**,**DB_NAME**, todos serão utilizados para construir um URL de acesso  no seguinte formato 
  `{DB_CONNECTOR}://{DB_USER}:{DB_PASSWORD}@{DB_URL}/{DB_NAME}`, se desejar é possivel alterar o código para se adequar ao seu banco desejado.
 
- Após realizar as configurações, crie as tabelas do banco de dado usando o seguinte comando:
+ Após realizar as configurações, crie o banco de dado e as tabelas usando o seguinte comando:
  ```bash
  flask create-db
  ```
+ ⚠️ obs: para esse comando seu usuário deve possuir previlégio de criação de bancos e tabelas.⚠️
+   
  Caso deseje é possivel usar o comando abaixo para criar automaticamente 2 usuarios de exemplo para testar o projeto.
  ```bash
  flask populate-db
@@ -47,14 +49,15 @@ Este projeto basico é o resultado do estudos de algumas funcionalidades do micr
  Após esse comando estará disponivel dois usarios com emails sendo `joel@example.com` e `ellie@example.com`, ambos usam a senha `123`.
 
 Tambem está disponivel um comando para deletar as tabelas, use o seguinte comando para esse proposito:
+
 ```bash
- flask drop-db
- ```
- para executar utilize o comando abaixo:
- ```bash
- flask run
- ```
- Após esse comando o servidor de desenvolvimento será iniciado e basta acessar o endereço `localhost:3000`(caso o .env não tenha sido modificado) em qualquer navegador de sua preferência.
+flask drop-db
+```
+para executar utilize o comando abaixo:
+```bash
+flask run
+```
+Após esse comando o servidor de desenvolvimento será iniciado e basta acessar o endereço `localhost:3000`(caso o `.env` não tenha sido modificado) em qualquer navegador de sua preferência.
 
 # **<a name=dependencies>Dependências</a>**  <h6>[voltar ao indice](#index)</h6>
 
