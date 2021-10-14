@@ -1,6 +1,11 @@
 {% if errors %}
     <div class="error-container">
-        <span class="error-header"><b class="error-close">X</b></span>
+        <span class="error-header">
+            <b class="error-title">Error</b>
+            <span class="flex-center error-close">
+                <b>X</b>
+            </span>
+        </span>
         <div class="error-message">
                 <span>{{errors}}</span>
             </div>
