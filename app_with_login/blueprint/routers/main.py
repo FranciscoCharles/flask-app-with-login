@@ -15,6 +15,8 @@ def home():
 @bp.route('/register', methods=['GET', 'POST'])
 def register():
     errors = None
+    name = ''
+    email = ''
     if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
@@ -24,7 +26,7 @@ def register():
             try:
                 user = User(name, email, password)
                 query_user = User.query.filter_by(email=email).first()
-            
+                
                 if not query_user:
                     db.session.add(user)
                     db.session.commit()
@@ -38,19 +40,17 @@ def register():
         else:
             errors = 'Campos invalidos!'
 
-    return render_template('register.html', errors=errors)
+    return render_template('register.html', errors=errors, name=name, email=email)
 
 @bp.route('/login', methods=['GET', 'POST'])
 def login():    
     errors = None
+    email = ''
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
         if email and password:
             try:
-                email = request.form['email']
-                password = request.form['password']
-
                 user = User.query.filter_by(email=email).first()
                 if not user or not user.verify_password(password):
                     errors = 'Email ou Senha invalidos!'
@@ -61,7 +61,7 @@ def login():
                 errors = 'Ocorreu um erro desconhecido, tente Novamente!'
         else:
             errors = 'Campos invalidos!'
-    return render_template('login.html', errors=errors)
+    return render_template('login.html', email=email, errors=errors)
 
 @bp.route('/logout')
 def logout():
