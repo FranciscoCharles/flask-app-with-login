@@ -50,7 +50,7 @@ flask populate-db
 ```
 Após esse comando estará disponivel dois usarios com emails sendo `joel@example.com` e `ellie@example.com`, ambos usam a senha `123`.
 
-Tambem está disponivel um comando para deletar as tabelas, use o seguinte comando para esse proposito:
+Tambem está disponivel um comando para deletar o banco de dados, use o seguinte comando para esse proposito:
 
 ```bash
 flask drop-db
