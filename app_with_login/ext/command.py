@@ -1,40 +1,31 @@
+from flask import current_app
+from flask.cli import with_appcontext
 from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy import create_engine
+from sqlalchemy_utils import database_exists, create_database, drop_database
 from app_with_login.ext.database import db
 from app_with_login.models import User
-import toml
 
-def create_db_if_not_exists():
-    all_settings = toml.load('settings.toml')
-    default_settings = all_settings['default']
 
-    DB_USER = default_settings['DB_USER']
-    DB_PASSWORD = default_settings['DB_PASSWORD']
-    DB_URL = default_settings['DB_URL']
-    DB_NAME = default_settings['DB_NAME']
-    DB_CONNECTOR = default_settings['DB_CONNECTOR']
-
-    full_db_url = f"{DB_CONNECTOR}://{DB_USER}:{DB_PASSWORD}@{DB_URL}"
-    engine = create_engine(full_db_url, echo=True)
-    engine.execute(f'CREATE DATABASE IF NOT EXISTS {DB_NAME}')
-    engine.dispose()
-    
+@with_appcontext
 def create_db():
     """Creates database"""
     try:
-        create_db_if_not_exists()
+        database_uri = current_app.config['SQLALCHEMY_DATABASE_URI']
+        if not database_exists(database_uri):
+            create_database(database_uri)
         db.create_all()
     except SQLAlchemyError as error:
         print('Create DB error:', error)
-    #User.__table__.create(engine)
 
+@with_appcontext
 def drop_db():
     """Drop database"""
     try:
-        db.drop_all()
+        database_uri = current_app.config['SQLALCHEMY_DATABASE_URI']
+        if database_exists(database_uri):
+            drop_database(database_uri)
     except SQLAlchemyError as error:
         print('Drop DB error:', error)
-    #User.__table__.drop(engine)
 
 def populate_db():
     """Populate database"""

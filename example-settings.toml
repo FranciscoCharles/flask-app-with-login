@@ -1,11 +1,7 @@
 [default]
 TITLE = "App with login"
 SECRET_KEY = "1f13965644d67dec60739fc61f51dd97"
-DB_NAME = ""
-DB_USER = ""
-DB_PASSWORD = ""
-DB_URL = ""
-DB_CONNECTOR = ""
+SQLALCHEMY_DATABASE_URI = ""
 SQLALCHEMY_TRACK_MODIFICATIONS = false
 EXTENSIONS = [
     "app_with_login.ext.auth:init_app",

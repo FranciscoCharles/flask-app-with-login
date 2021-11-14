@@ -67,32 +67,24 @@ No arquivo `toml` alguns atributos conforme necessario devem ser modificados, es
 [default]
 TITLE = "App with login"
 SECRET_KEY = "1f13965644d67dec60739fc61f51dd97"
-DB_NAME = ""
-DB_USER = ""
-DB_PASSWORD = ""
-DB_URL = ""
-DB_CONNECTOR = ""
+SQLALCHEMY_DATABASE_URI = ""
 ```
 Abaixo uma breve descrição de cada um:
 
 + **TITLE**: titulo da aplicação, por padrão `"App with login"`.
 + **SECRET_KEY**: A secret key que será utilizada pelo flask, por padrão `"1f13965644d67dec60739fc61f51dd97"`.
-+ **DB_NAME**: Nome do banco de dados criado ou a ser criado, por padrão `""`.
-+ **DB_USER**: Nome do usuário do banco de dados, por padrão `""`.
-+ **DB_PASSWORD**: Senha do usuário, por padrão `""`.
-+ **DB_URL**: Url de acesso ao banco, por padrão `""`. Um exemplo seria usar `"localhost:3306"` para um banco Mysql local e usando a porta padrão.
-+ **DB_CONNECTOR**: Nome do banco usado e do drive conector(banco utilizado+driver), por padrão `""`. Consulte o site do SqlAlchemy sobre [URL de banco de dados](https://docs.sqlalchemy.org/en/14/core/engines.html).
++ **SQLALCHEMY_DATABASE_URI**: A URI do banco de dados. Consulte o site do SqlAlchemy sobre [Database Urls](https://docs.sqlalchemy.org/en/14/core/engines.html).
 
-⚠️
-Os atributos **DB_CONNECTOR**, **DB_USER**, **DB_PASSWORD**,**DB_URL**,**DB_NAME**, todos serão utilizados para construir um URL de acesso  no seguinte formato `{DB_CONNECTOR}://{DB_USER}:{DB_PASSWORD}@{DB_URL}/{DB_NAME}`, se desejar é possivel alterar o código para se adequar ao seu banco utilizado.⚠️
 
 # **<a name=dependencies>Dependências</a>**  <h6>[voltar ao indice](#index)</h6>
+
+Verifique o arquivo [requirements.txt](./requeriments.txt)
 
 - [**Flask**](https://pypi.org/project/Flask/) **>= 2.0.2**
 - [**Flask-login**](https://pypi.org/project/Flask-Login/) **>= 0.5.0**
 - [**Flask-SQLAlchemy**](https://pypi.org/project/Flask-SQLAlchemy/) **>= 2.5.1**
 - [**Dynaconf**](https://pypi.org/project/dynaconf/) **>=3.1.7**
-- [**Toml**](https://pypi.org/project/toml/) **>=0.10.2**
+- [**SQLAlchemy-Utils**](https://pypi.org/project/SQLAlchemy-Utils/) **>=0.37.8**
 
 # **<a name=version>Versão</a>**  <h6>[voltar ao indice](#index)</h6>
 - versão atual do projeto: 0.1.1.
