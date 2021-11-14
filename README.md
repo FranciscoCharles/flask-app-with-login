@@ -78,7 +78,7 @@ Abaixo uma breve descrição de cada um:
 
 # **<a name=dependencies>Dependências</a>**  <h6>[voltar ao indice](#index)</h6>
 
-Verifique o arquivo [requirements.txt](./requeriments.txt)
+Verifique o arquivo [requirements.txt](./requirements.txt)
 
 - [**Flask**](https://pypi.org/project/Flask/) **>= 2.0.2**
 - [**Flask-login**](https://pypi.org/project/Flask-Login/) **>= 0.5.0**
